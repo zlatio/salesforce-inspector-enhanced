@@ -32,7 +32,7 @@ The screenshots and videos use a demo org with made-up people and companies. Mor
   - Changes are staged and shown as *old → new*, then confirmed in a review dialog.
   - **Safety:** the review dialog re-reads the record and warns you if someone changed it since you loaded it. Every save shows a toast with **Undo**.
   - **Production orgs:** editing is locked until you turn on "Edit production data". The header gets a red edge and the save buttons say *production*.
-- **Field details drawer** shows the full describe: formula, help text, picklist values, capabilities and raw JSON. It also has **Find records with this value**, which writes a correctly typed SOQL query for you.
+- **Field details drawer** shows the full describe: formula, help text, picklist values, capabilities and raw JSON. On a record it also shows the field's **change history** (who changed it, when, and from what to what), and has **Find records with this value**, which writes a correctly typed SOQL query for you.
 - **Child relationships** with *Count all*, which batches the COUNT() queries through the Composite Batch API (25 per call). Record types and the raw JSON are on their own tabs.
 
 ### SOQL

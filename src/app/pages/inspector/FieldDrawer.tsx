@@ -6,6 +6,7 @@ import { fieldTypeLabel, rawString } from "../../../lib/format";
 import { Badge, Button, CopyButton } from "../../../ui";
 import { links, navigate } from "../../router";
 import { FieldFlags, Value } from "./FieldsTable";
+import { FieldHistory } from "./FieldHistory";
 
 export function FieldDrawer({
   field: f,
@@ -112,6 +113,8 @@ export function FieldDrawer({
             )}
           </section>
         )}
+
+        {record && <FieldHistory field={f} describe={describe} record={record} lookups={lookups} />}
 
         {f.inlineHelpText && (
           <section class="dsec">

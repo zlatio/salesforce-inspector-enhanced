@@ -917,3 +917,54 @@ button.fh:hover {
   text-transform: uppercase;
   color: var(--warning-text);
 }
+
+/* ---------- Field history ---------- */
+.dsec__title .btn {
+  margin: -4px -6px -4px 0;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.dhist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  max-height: 320px;
+  overflow: auto;
+}
+.dhist__row {
+  padding: 7px 10px;
+  font-size: var(--fs-sm);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.dhist__row:last-child {
+  border-bottom: 0;
+}
+.dhist__meta {
+  font-size: var(--fs-xs);
+  color: var(--text-3);
+  margin-bottom: 3px;
+}
+.dhist__change {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+  word-break: break-word;
+}
+.dhist__old {
+  color: var(--text-2);
+  text-decoration: line-through;
+  text-decoration-color: var(--text-3);
+}
+.dhist__old .fnull {
+  text-decoration: none;
+}
+.dhist__arrow {
+  width: 13px;
+  height: 13px;
+  flex: none;
+  align-self: center;
+  color: var(--text-3);
+}
